@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form id="form1">
+    First Name:
+    <input type="text" name="firstname">
+    <br><br>
+    Last Name:
+    <input type="text" name="lastname">
+    <br><br>
+    <select id="selectOS">
+      <option>Windows</option>
+      <option>Linux</option>
+      <option>Mac</option>
+    </select>
+    <br><br>
+    <label for="oculus">Oculus</label>
+    <input type="checkbox" name="device" id="oculus" data-id="oculus">
+    <br><br>
+    <label for="vive">Vive</label>
+    <input type="checkbox" name="device" id="vive" data-id="vive">
+    <br><br>
+    <label for="daydream">Daydream</label>
+    <input type="checkbox" name="device" id="daydream" data-id="daydream">
+    <br><br>
+    <input type="radio" name="crust" value="thin"> Thin
+    <input type="radio" name="crust" value="medium" checked> Medium
+    <input type="radio" name="crust" value="thick"> Thick
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>

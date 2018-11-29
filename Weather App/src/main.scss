@@ -1,0 +1,21 @@
+@import 'presets';
+@import '~font-awesome/css/font-awesome.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background: rgb(235, 235, 235);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: $font-color;
+}

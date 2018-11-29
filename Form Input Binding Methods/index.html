@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Input Binding Methods</title>
+</head>
+<body>
+  <div id="pizza-maker">
+      <h1>Create your Pizza</h1>
+      
+      <form id="pizza-maker-form">
+          <div>
+              <h3>Pizza Name</h3>
+              <input type="text" name="pizzaName">
+          </div>
+          
+          <div>
+            <h3>Size</h3>
+            <select id="pizzaSize">
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+              <option>X-Large</option>
+            </select>
+          </div>
+    
+          <div>
+            <h3>Ingredients</h3>
+            <input type="checkbox" name="ingredients" data-id="Pepperoni"> Pepperoni
+            <br>
+            <input type="checkbox" name="ingredients" data-id="Ham"> Ham
+            <br>
+            <input type="checkbox" name="ingredients" data-id="Cheddar"> Cheddar
+            <br>
+            <input type="checkbox" name="ingredients" data-id="Mushrooms"> Mushrooms
+            <br>
+            <input type="checkbox" name="ingredients" data-id="Tuna"> Tuna
+          </div>
+    
+          <div>
+            <h3>Crust</h3>
+            <input type="radio" name="crust" value="Thin"> Thin
+            <input type="radio" name="crust" value="Medium" checked> Medium
+            <input type="radio" name="crust" value="Thick"> Thick
+          </div>
+          
+          <br>
+          <input type="submit" value="Add!">
+      </form>
+  </div>
+
+  <hr>
+
+  <div id="pizza-preview">
+      <h3>Your Pizza</h3>
+      <div id="pizza-data">Start creating your favorite pizza!</div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@import '~Root/presets';
+
+$header-height: 4em;
+
+.notifications {
+  display: block;
+  position: absolute;
+  background: rgb(255, 0, 0);
+  width: 100%;
+  height: $header-height;
+  padding: 0 1em;
+
+  .alert{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    color: rgb(255, 255, 255);
+  }
+
+  .icon {
+    font-size: 1.5em
+  }
+}
+
+.notifications.show {
+  transition: transform 1s ease;
+}
+
+.notifications.hide {
+  transform: translateY(-$header-height + 0.1em);
+  transition: transform 1s ease;
+}
+
+
+
